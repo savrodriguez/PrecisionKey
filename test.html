@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrecisionKey-Test</title> 
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+
+<!-- LOGO -->
+    <nav class="navbar bg-white">
+        <div class="container-fluid" style="margin: 40px">
+            <div class="navbar-brand fw-bold" id="precisionKey" style="font-weight: bolder; font-size: 40px; color:darkred;">
+                Precision Key
+                <div class="profileLink" id="profileLink">
+                    <a class="navbar-brand" href="./profile.html">
+                        <img src="/user-logo.png" alt="" width="55px" height="55px">
+                      </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<!-- INSTRUCTION -->
+    <div class="header">
+        <p>Begin typing to start the counter below. Once the minute is up your score will be displayed in your history! 
+            <br>If you choose to try again a different passage will be given.</p>
+    </div>
+
+
+<!-- TEST -->
+    <div class="wrapper">
+        <input type="text" class="input-field">
+        <div class="content-box">
+            <div class="typing-text">
+                <p id="paragraphs"></p>
+            </div>
+            <div class="content">
+                <ul class="result-details">
+                    <li class="time">
+                        <p>
+                            Time:
+                        </p>
+                        <span><b>60s</b></span>
+                    </li>
+                    <li class="mistake">
+                        <p>
+                           Mistakes: 
+                        </p>
+                        <span>0</span>
+                    </li>
+                    <li class="wpm">
+                        <p>
+                            WPM:
+                        </p>
+                        <span>0</span>
+                    </li>
+                    <li class="cpm">
+                        <p>
+                            CPM:
+                        </p>
+                        <span>0</span>
+                    </li>
+                </ul>
+            </div>
+            <button class="try-again">Try Again</button>
+            <button onclick="displayResult()" id="getResults">Get Results</button>
+        </div>
+    </div>
+
+<!-- SCORES -->
+    <div class="result-container">
+
+    </div>
+
+
+
+
+</body>
+</html>
